@@ -1,0 +1,4 @@
+
+DROP VIEW IF EXISTS usr_sige.pipe_schema_nan_ids;
+DROP VIEW IF EXISTS usr_sige.pipe_schema_nan_layer;
+DROP VIEW IF EXISTS usr_sige.statistics_ssige;
