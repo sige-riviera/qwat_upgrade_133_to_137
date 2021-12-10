@@ -44,7 +44,7 @@ The checksum attribute values in qwat_sys.upgrades production database should be
 -> Do not forget to manually disconnect pgAdmin connections if pgAdmin is opened
 -> Make sure postgres service exists in defined in pg_service.conf
 
-### Create a production database duplicate and the empty comparison database (method using prefixed "pum_" databases)
+### Create a production database duplicate and clean both test and comparison databases (method using prefixed "pum_" databases)
 `psql -U sige -d postgres -c "DROP DATABASE IF EXISTS pum_qwat_prod"`
 `psql -U sige -d postgres -c "CREATE DATABASE pum_qwat_prod WITH TEMPLATE qwat_prod"`
 `psql -U sige -d pum_qwat_prod -c "ALTER SCHEMA cartoriviera RENAME TO usr_cartoriviera"`
