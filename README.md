@@ -19,6 +19,7 @@ Upgrade scripts for QWAT SIGE datamodel from version 1.3.3 to 1.3.7.
 `sudo pip3 install pum`
 
 ### Get some utility scripts
+`mkdir ~/sit/production/qwat_upgrade_133_to_137`
 `cd ~/sit/production/qwat_upgrade_133_to_137`
 `git clone git@github.com:kandre/utils.git`
 
