@@ -32,7 +32,7 @@ Upgrade scripts for QWAT SIGE datamodel from version 1.3.3 to 1.3.7.
 - delta_1.3.5_000 is edited because there is a conflict in status value list where values already exists (apparently, a wild customisation).
 
 ### Check checksum md5 values in upgrade tables
-The checksum attribute values in qwat_sys.upgrades production database should be the same as the ones in master. If not, make sure delta corrections are correctly applied and copy paste the correct md5 values.
+The checksum attribute values in qwat_sys.upgrades production database should be the same as the ones in released datamodel. If not, make sure delta corrections are correctly applied and copy paste the correct md5 values.
 
 ### Download SIGE+SIRE extension. It can be placed anywhere but more convenient to store it under data-model
 `cd 	~/sit/production/qwat_upgrade_133_to_137/QWAT/data-model`
