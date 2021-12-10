@@ -40,8 +40,9 @@ The checksum attribute values in qwat_sys.upgrades production database should be
 `cd ~/sit/production/qwat_upgrade_133_to_137/QWAT`
 
 ### Disconnect current production database connections to allow production database copy at next step
-`./utils/psql/kick_db_connections/kick_db_connections.sh -u sige -p qwat_prod -d qwat_prod`
+`./utils/psql/kick_db_connections.sh -u sige -p qwat_prod -d qwat_prod`
 -> Do not forget to manually disconnect pgAdmin connections if pgAdmin is opened
+-> Make sure postgres service exists in defined in pg_service.conf
 
 ### Create a production database duplicate and the empty comparison database (method using prefixed "pum_" databases)
 `psql -U sige -d postgres -c "DROP DATABASE IF EXISTS pum_qwat_prod"`
