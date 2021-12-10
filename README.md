@@ -25,6 +25,7 @@ Upgrade scripts for QWAT SIGE datamodel from version 1.3.3 to 1.3.7.
 
 ### Download QWAT project with its datamodel
 `git clone --recurse-submodules git@github.com:qwat/QWAT.git`
+-> Next time, better user `git clone --recurse-submodules --branch 1.3.7 git@github.com:qwat/QWAT.git`
 
 ### Exceptionnaly some deltas need to be edited
 - delta_1.3.4_003 is edited because there is a conflict in status value list where existing waiting (1308) value is, apparently, a wild customisation.
