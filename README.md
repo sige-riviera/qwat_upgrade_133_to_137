@@ -24,8 +24,6 @@ Upgrade scripts for QWAT SIGE datamodel from version 1.3.3 to 1.3.7.
 `git clone git@github.com:kandre/utils.git`
 
 ### Download QWAT project with its datamodel
-`mkdir ~/sit/production/qwat_upgrade_133_to_137`
-`cd ~/sit/production/qwat_upgrade_133_to_137`
 `git clone --recurse-submodules git@github.com:qwat/QWAT.git`
 
 ### Exceptionnaly some deltas need to be edited
